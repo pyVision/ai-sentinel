@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ai-seninel"
+version = "0.1.0"
+description = "A1"
+authors = ["Donatas Rasiukevicius <donatas@fly.io>"]
+readme = "README.md"
+packages = [{include = "ai_seninel", from = "src"}]
+include = [ "templates" ]
+
+[tool.poetry.dependencies]
+python=">=3.11,<3.14"
+google-api-python-client = "^2.172.0"
+google-auth-oauthlib = "^1.2.2"
+pandas = "^2.3.0"
+matplotlib = "^3.10.3"
+seaborn = "^0.13.2"
+plotly = "^6.1.2"
+nltk = "^3.9.1"
+dotenv = "^0.9.9"
+litellm = "^1.72.6.post1"
+youtube-transcript-api = "^1.1.0"
+yt-dlp = "^2025.6.9"
+openai = "^1.88.0"
+isodate = "^0.7.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
